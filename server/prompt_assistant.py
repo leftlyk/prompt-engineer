@@ -18,10 +18,8 @@ completion = client.chat.completions.create(
 )
 
 
-#print(completion.choices[0].message.content)
 
 qs = (completion.choices[0].message.content).split('?')
-#print(qs)
 
 questions_dict = {}
 
