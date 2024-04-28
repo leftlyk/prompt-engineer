@@ -1,0 +1,35 @@
+textarea { 
+    transition-duration: 500ms;
+    resize: none; 
+    color: #767676;
+    font-family: Oxygen;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    border: none;
+}
+
+textarea:focus {
+    color: #525252;
+    outline: none;
+    padding-left: 7%;
+    transition-duration: 500ms;
+    
+}
+
+textarea:focus::placeholder {
+    color: #525252;
+    transition-duration: 500ms;
+}
+
+.everything {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+html, body, .everything{
+    height: 100%; 
+}

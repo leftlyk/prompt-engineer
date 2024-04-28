@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel = "stylesheet" href = "{{ url_for('static', filename='frontend.css') }}">
+            <!--link to css--->
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+        </style>
+    </head>
+    <body>
+        <div class="everything">
+            <form id ="myForm" method="POST">
+                <textarea id="text" name="txt" 
+                autocomplete="off" data-gramm="false" 
+                placeholder="Your prompt here..." autocapitalize="sentences"></textarea>
+                <input type="submit" hidden />
+            </form>
+        </div>
+
+        <script>
+            document.getElementById("text").addEventListener("keydown", function(event) {
+                // Check if the 'Enter' key is pressed
+                if (event.key === "Enter" && !event.shiftKey) {
+                    // Prevent the default form submission
+                    event.preventDefault();
+                    // Submit the form
+                    document.getElementById("myForm").submit();
+                }
+            });
+            </script>
+
+    </body>
+</html>

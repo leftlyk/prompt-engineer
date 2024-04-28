@@ -1,0 +1,67 @@
+textarea, h1 {
+    transition-duration: 500ms;
+    resize: none; 
+    color: #767676;
+    font-family: Oxygen;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    border: none;
+}
+
+h2 {
+    color: #525252;
+    font-family: Oxygen;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    border: none;
+
+}
+
+p {
+    transition-duration: 500ms;
+    resize: none; 
+    color: #767676;
+    font-family: Oxygen;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    border: none;
+}
+
+h1 {
+    width: 70%;
+    margin-right: 20%;
+}
+
+textarea {
+    margin-left: 20%;
+}
+
+textarea:focus {
+    color: #525252;
+    outline: none;
+    padding-left: 7%;
+    transition-duration: 500ms;
+    
+}
+
+textarea:focus::placeholder {
+    color: #525252;
+    transition-duration: 500ms;
+}
+
+.everything {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+html, body, .everything{
+    height: 100%; 
+}
