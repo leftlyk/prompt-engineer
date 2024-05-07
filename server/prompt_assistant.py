@@ -1,9 +1,11 @@
 import os
 from openai import OpenAI
-from api import dict
+from dotenv import load_dotenv
+load_dotenv()
+import os
 
 client = OpenAI(
-    api_key=dict["OpenAI"]
+    api_key=os.getenv("API_KEY")
 )
 
 res = input("Prompt: ")
